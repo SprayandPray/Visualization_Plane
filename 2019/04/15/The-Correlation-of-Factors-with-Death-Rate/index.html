@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+  <title>3.the correlation of factors with death rate | Plane_crash</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+    <meta name="keywords" content="Msc, Programme, Group Project, Visualization">
+  
+  
+  
+  
+  <meta name="description" content="下图表示严重性程度和飞机载客数变化的曲线，横坐标表示飞机的载客量，纵坐标表示事故的严重性，其中：      其中，严重性表示为，发生每一期事故，总死亡率大于等于80%的事故比例      可以看到，随着飞机载客量的增加，严重性会逐步减少，大飞机的严重事故发生频率较低。     可以推测的理由是，小飞机由于体量较小，更容易发生严重事故">
+<meta property="og:type" content="article">
+<meta property="og:title" content="3.The Correlation of Factors with Death Rate">
+<meta property="og:url" content="https://sprayandpray.github.io/Visualization_Plane/2019/04/15/The-Correlation-of-Factors-with-Death-Rate/index.html">
+<meta property="og:site_name" content="Plane_crash">
+<meta property="og:description" content="下图表示严重性程度和飞机载客数变化的曲线，横坐标表示飞机的载客量，纵坐标表示事故的严重性，其中：      其中，严重性表示为，发生每一期事故，总死亡率大于等于80%的事故比例      可以看到，随着飞机载客量的增加，严重性会逐步减少，大飞机的严重事故发生频率较低。     可以推测的理由是，小飞机由于体量较小，更容易发生严重事故">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://public.tableau.com/static/images/PP/PPseriousaccidents/Sheet1/1_rss.png">
+<meta property="og:image" content="https://public.tableau.com/static/images/Cr/CrashrationbyHrs/Sheet1/1_rss.png">
+<meta property="og:image" content="https://public.tableau.com/static/images/WO/WORK0419/Correlationofcrewandpassenger/1_rss.png">
+<meta property="og:image" content="https://public.tableau.com/static/images/WO/WORK0419/Correlationofcrewandpassengers/1_rss.png">
+<meta property="og:updated_time" content="2019-04-20T15:10:56.514Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="3.The Correlation of Factors with Death Rate">
+<meta name="twitter:description" content="下图表示严重性程度和飞机载客数变化的曲线，横坐标表示飞机的载客量，纵坐标表示事故的严重性，其中：      其中，严重性表示为，发生每一期事故，总死亡率大于等于80%的事故比例      可以看到，随着飞机载客量的增加，严重性会逐步减少，大飞机的严重事故发生频率较低。     可以推测的理由是，小飞机由于体量较小，更容易发生严重事故">
+<meta name="twitter:image" content="https://public.tableau.com/static/images/PP/PPseriousaccidents/Sheet1/1_rss.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Plane_crash" type="application/atom+xml">
+  
+
+  
+
+  <link rel="icon" href="/Visualization_Plane/css/images/MScCSLogo.png">
+  <link rel="apple-touch-icon" href="/Visualization_Plane/css/images/MScCSLogo.png">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt; src:url("css/fonts/FuturaPTBold.otf") format("woff");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt-light; src:url("css/fonts/FuturaPTBook.otf") format("woff");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt-italic; src:url("css/fonts/FuturaPTBookOblique.otf") format("woff");font-weight:400;font-style:italic;}
+}
+
+  </style>
+  <link rel="stylesheet" href="/Visualization_Plane/css/style.css">
+
+  <script src="/Visualization_Plane/js/jquery-3.1.1.min.js"></script>
+  <script src="/Visualization_Plane/js/bootstrap.js"></script>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/Visualization_Plane/css/bootstrap.css">
+
+  
+    <link rel="stylesheet" href="/Visualization_Plane/css/dialog.css">
+  
+
+  
+
+  
+    <link rel="stylesheet" href="/Visualization_Plane/css/header-post.css">
+  
+
+  
+  
+  
+
+</head>
+</html>
+
+
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
+
+
+  
+  <div id="container">
+    <div id="wrap">
+      
+        <header>
+
+    <div id="allheader" class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="navbar-inner">
+          
+          <div class="container"> 
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            
+              <a class="brand" style="
+                 margin-top: 0px;" href="#" data-toggle="modal" data-target="#myModal">
+                  <img width="130px" height="60px" alt="Hike News" src="/Visualization_Plane/css/images/MScCSLogo.png">
+              </a>
+            
+            
+            <div class="navbar-collapse collapse">
+              <ul class="hnav navbar-nav">
+                
+                  <li> <a class="main-nav-link" href="/Visualization_Plane/">Home</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/Visualization_Plane/archives">Archives</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/Visualization_Plane/about">About</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/Visualization_Plane/report">report</a> </li>
+                
+                  <li><div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder>
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something...">
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/Visualization_Plane/',
+        CONTENT_URL: '/Visualization_Plane/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/Visualization_Plane/js/insight.js"></script>
+
+</div></li>
+            </ul></div>
+          </div>
+                
+      </div>
+    </div>
+
+</header>
+
+
+
+      
+            
+      <div id="content" class="outer">
+        
+          <section id="main" style="float:none;"><article id="post-The-Correlation-of-Factors-with-Death-Rate" class="article article-type-post" itemscope itemprop="blogPost">
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      3.The Correlation of Factors with Death Rate
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/Visualization_Plane/2019/04/15/The-Correlation-of-Factors-with-Death-Rate/" class="article-date">
+	  <time datetime="2019-04-15T12:45:40.000Z" itemprop="datePublished">2019-04-15T20:45:40+08:00</time>
+	</a>
+
+      
+      
+      
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li><p>下图表示严重性程度和飞机载客数变化的曲线，横坐标表示飞机的载客量，纵坐标表示事故的严重性，其中：    </p>
+</li>
+<li><p>其中，严重性表示为，发生每一期事故，总死亡率大于等于80%的事故比例    </p>
+</li>
+<li><p>可以看到，随着飞机载客量的增加，严重性会逐步减少，大飞机的严重事故发生频率较低。   </p>
+</li>
+<li><p>可以推测的理由是，小飞机由于体量较小，更容易发生严重事故   </p>
+</li>
+</ul>
+<hr>
+<p><div class="tableauPlaceholder" id="viz1555750550491" style="position: relative"><br>    <noscript><br>        <a href="#"><img alt=" " src="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;PP&#47;PPseriousaccidents&#47;Sheet1&#47;1_rss.png" style="border: none"><br>        </a><br>    </noscript><br>    <object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param name="embed_code_version" value="3"> <param name="site_root" value><param name="name" value="PPseriousaccidents&#47;Sheet1"><param name="tabs" value="no"><param name="toolbar" value="yes"><param name="static_image" value="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;PP&#47;PPseriousaccidents&#47;Sheet1&#47;1.png"> <param name="animate_transition" value="yes"><param name="display_static_image" value="yes"><param name="display_spinner" value="yes"><param name="display_overlay" value="yes"><param name="display_count" value="yes"><br>    </object><br></div>                </p>
+<script type="text/javascript">                    var divElement = document.getElementById('viz1555750550491');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+</script>    
+
+<hr>
+<ul>
+<li><p>这张图表示了飞机飞行时间与事故发生率的相关性曲线，纵坐标表示小事故/大事故的比例，即位低死亡率事件和高死亡率事件的比例  </p>
+</li>
+<li><p>可以看到，飞行时间越长以后，即“飞机年龄越来越老”，小事故比例增加，大事故比例减少  </p>
+</li>
+<li><p>我们可以推断出服役时间越久的飞机，飞机稳定性很好（这是当然的），毕竟刚开始服役的飞机总是会因为实际因素而出现各种奇怪的问题  </p>
+</li>
+</ul>
+<hr>
+<p><div class="tableauPlaceholder" id="viz1555767208814" style="position: relative"><br>    <noscript><br>        <a href="#"><img alt=" " src="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cr&#47;CrashrationbyHrs&#47;Sheet1&#47;1_rss.png" style="border: none"></a><br>    </noscript><br>    <object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param name="embed_code_version" value="3"> <param name="site_root" value><param name="name" value="CrashrationbyHrs&#47;Sheet1"><param name="tabs" value="no"><param name="toolbar" value="yes"><param name="static_image" value="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cr&#47;CrashrationbyHrs&#47;Sheet1&#47;1.png"> <param name="animate_transition" value="yes"><param name="display_static_image" value="yes"><param name="display_spinner" value="yes"><param name="display_overlay" value="yes"><param name="display_count" value="yes"><param name="filter" value="publish=yes"><br>    </object><br></div>                </p>
+<script type="text/javascript">                    
+    var divElement = document.getElementById('viz1555767208814');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+</script>
+
+<hr>
+<ul>
+<li><p>这张图表示机组人员成活率和乘客人员存活率之间的相关性  </p>
+</li>
+<li><p>其中，我们分别统计了当一起事故发生时，机组和乘客人员之间的不同存活率，存活率定义是死亡人数/各自总人数    </p>
+</li>
+<li><p>我们对数据点进行了拟合，可以明显看到，机组和乘客人员存活率之间存在正相关性，当机组人员死亡率高时候，乘客幸存率很低  </p>
+</li>
+<li><p>机组人员的存活，对于乘客来说，是至关重要的，所以我们应当尽量保证飞机驾驶舱的安全性，来保证机组人员的安全</p>
+</li>
+</ul>
+<p><div class="tableauPlaceholder" id="viz1555757388625" style="position: relative"><br>    <noscript><br>        <a href="#"><img alt=" " src="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;WO&#47;WORK0419&#47;Correlationofcrewandpassenger&#47;1_rss.png" style="border: none"></a></noscript><object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param name="embed_code_version" value="3"> <param name="site_root" value><param name="name" value="WORK0419&#47;Correlationofcrewandpassenger"><param name="tabs" value="no"><param name="toolbar" value="yes"><param name="static_image" value="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;WO&#47;WORK0419&#47;Correlationofcrewandpassenger&#47;1.png"> <param name="animate_transition" value="yes"><param name="display_static_image" value="yes"><param name="display_spinner" value="yes"><param name="display_overlay" value="yes"><param name="display_count" value="yes"><param name="filter" value="publish=yes"><br>        </object><br>    </div>                </p>
+<script type="text/javascript">                    
+        var divElement = document.getElementById('viz1555757388625');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+</script>   
+
+<hr>
+<ul>
+<li><p>下图是上图数据点的热点图，可以看到，数据点集中在0%-0%和98%-100%  </p>
+</li>
+<li><p>进一步说明，飞机事故发生的分布，即要么是较为轻微的时间“死亡数很少”，要么就是死亡率极高的案件  </p>
+</li>
+<li><p>机组人员的存活率至关重要！</p>
+</li>
+</ul>
+<hr>
+<p><div class="tableauPlaceholder" id="viz1555644891030" style="position: relative"><br>    <noscript><a href="#"><img alt=" " src="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;WO&#47;WORK0419&#47;Correlationofcrewandpassengers&#47;1_rss.png" style="border: none"></a><br>    </noscript><br>    <object class="tableauViz" style="display:none;"><param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"> <param name="embed_code_version" value="3"> <param name="site_root" value><param name="name" value="WORK0419&#47;Correlationofcrewandpassengers"><param name="tabs" value="no"><param name="toolbar" value="yes"><param name="static_image" value="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;WO&#47;WORK0419&#47;Correlationofcrewandpassengers&#47;1.png"> <param name="animate_transition" value="yes"><param name="display_static_image" value="yes"><param name="display_spinner" value="yes"><param name="display_overlay" value="yes"><param name="display_count" value="yes"><br>    </object><br></div>                </p>
+<script type="text/javascript">                    
+    var divElement = document.getElementById('viz1555644891030');                    
+    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+</script>
+
+
+
+<hr>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+      
+        
+      
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/Visualization_Plane/2019/04/16/Further-Analysis-of-Accidents/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          2.Further Analysis of Accidents
+        
+      </div>
+    </a>
+  
+  
+    <a href="/Visualization_Plane/2019/04/13/Other-Discussions/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">5.Other Discussions</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+<!-- Table of Contents -->
+
+</section>
+        
+      </div>
+      
+      <footer id="footer">
+  
+
+  <div class="container">
+      	<div class="row">
+	      <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p>
+	      <p id="copyRightEn">Copyright &copy; 2018 - 2019 Plane_crash All Rights Reserved.</p>
+	      
+	      
+  		   	<p id="copyRightCn">Wang Xichen, Feng Jiayu, He Zhaoxuan hold copyright</p>
+  		   
+		</div>
+
+		
+  </div>
+</footer>
+
+
+<!-- min height -->
+
+<script>
+    var wrapdiv = document.getElementById("wrap");
+    var contentdiv = document.getElementById("content");
+    var allheader = document.getElementById("allheader");
+
+    wrapdiv.style.minHeight = document.body.offsetHeight + "px";
+    if (allheader != null) {
+      contentdiv.style.minHeight = document.body.offsetHeight - allheader.offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    } else {
+      contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    }
+</script>
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/Visualization_Plane/" class="mobile-nav-link">Home</a>
+  
+    <a href="/Visualization_Plane/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/Visualization_Plane/about" class="mobile-nav-link">About</a>
+  
+    <a href="/Visualization_Plane/report" class="mobile-nav-link">Report</a>
+  
+</nav> -->
+    
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  <link rel="stylesheet" href="/Visualization_Plane/fancybox/jquery.fancybox.css">
+  <script src="/Visualization_Plane/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/Visualization_Plane/js/scripts.js"></script>
+
+
+
+
+  <script src="/Visualization_Plane/js/dialog.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="myModalLabel">设置</h2>
+      </div>
+      <hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
+      <hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
+
+
+      <div class="modal-body">
+          <div style="margin:6px;">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" onclick="javascript:setFontSize();" aria-expanded="true" aria-controls="collapseOne">
+              正文字号大小
+            </a>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            您已调整页面字体大小
+          </div>
+        </div>
+      
+
+
+          <div style="margin:6px;">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" onclick="javascript:setBackground();" aria-expanded="true" aria-controls="collapseTwo">
+              夜间护眼模式
+            </a>
+        </div>
+          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="panel-body">
+            夜间模式已经开启，再次单击按钮即可关闭 
+          </div>
+        </div>
+
+        <div>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关 于&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        </div>
+         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+          <div class="panel-body">
+            Plane_crash
+          </div>
+          <div class="panel-body">
+            Copyright © 2019 Wang Xichen, Feng Jiayu, He Zhaoxuan All Rights Reserved.
+          </div>
+        </div>
+      </div>
+
+
+      <hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
+      <hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
+      <div class="modal-footer">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+  
+</body>
+</html>
